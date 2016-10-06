@@ -12,9 +12,9 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #5D4C46;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #E45641;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -38,14 +38,32 @@ $on-laptop:        800px;
 // Import partials from the `minima` theme.
 @import "minima";
 
-body {
+/* theme overrides */
 
+pre, code {
+  background-color: #F2EDD8;
 }
 
-video {
-  max-width: 100%;
-  border: 4px solid #8BC34A;
-  border-radius: 30px 0 30px;
-  display: block;
-  margin: 50px auto;
+.link-no-style {
+  text-decoration: none;
+  color: inherit;
+  &:visited {
+    color: inherit;
+  }
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding: 1em 2em;
+}
+
+#page-header {
+  padding: 2em;
+  background: $brand-color;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
 }
